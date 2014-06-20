@@ -32,4 +32,4 @@ A tidy dataset will also be produced. This dataset contains the average (mean) o
 "HumanActivitySmartphoneRecognition_tidyData.txt"
 
 
-The file "HumanActivitySmartphoneRecognition_CodeBook.txt" contains more information on the meaning of each variable.
+The file "CodeBook.md" contains more information on the meaning of each variable.
