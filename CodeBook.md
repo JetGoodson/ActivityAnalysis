@@ -1,6 +1,11 @@
----Study Design---
+#Source
 
 The original study was conducted by Anguita et al at the "Smartlab" of the University of Genoa, Italy (www.smartlab.ws). 
+
+See: 
+Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+#Study Design
 
 A group of 30 subjects between the ages of 19 and 48 years were videotaped performing a set of activities while wearing a smartphone. The gyroscope and accelerometer of the smartphone recorded 50 measurements per seconds of the 3-axis linear acceleration and 3-axis angular velocity. Videotaping allowed the data to be manually labeled as WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, and LAYING.
 
@@ -8,13 +13,17 @@ The motion measurements were then processed with noise filters and a sliding win
 
 After this processing, the data was split 70%/30% into training and test data. 
 
----Code Book---
+#Code Book
 
 The origial 561 features before the cleaning performed are described as part of the dataset available at:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
+##Units
+
 For all linear measurements the units are g, the standard gravitional acceleration (9.8 m/s^2) except for linear jerk, which is a g/s. All angular velocity measurements are in radians/s, except for the angular jerk, which is radian/s^2.
+
+##Cleaned Data Features
 
 After cleaning and skimming the dataset features are reduced to the following 68 features for each window of data:
 
@@ -90,6 +99,8 @@ FFT_BodyBodyGyroscopeJerkMagnitude_mean                    - the mean of the Fas
 FFT_BodyBodyGyroscopeJerkMagnitude_StandardDeviation       - the standard deviation of the Fast-Fourier Transform of the angular jerk (radians/s^2) of the subject's smartphone for each time window.             
 
 This data can be found in "HumanActivitySmartphoneRecognition_cleanedData.txt" after running run_analysis.R
+
+##Tidy Data Features
 
 A summary of the data can be found in "HumanActivitySmartphoneRecognition_tidyData.txt". The motion features of the clean data are averaged (mean) over each Subject and activity label. The resulting features are:
 
