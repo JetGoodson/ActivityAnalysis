@@ -9,6 +9,8 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 The data to be cleaned can be found at:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
+#Instructions
+
 Please download and de-compress the data before preceeding with cleaning of the data.
 
 The only script used in this package is the run_analysis.R script. To run it, open R and source the file.
@@ -16,6 +18,8 @@ The only script used in this package is the run_analysis.R script. To run it, op
 > source("run_analysis.R")
 
 The data will then be loaded and cleaned. 
+
+#Results
 
 Two datasets will be produced. The skimmed version of the dataset will be placed in a file called:
 
